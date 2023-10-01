@@ -1,0 +1,69 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.contenedor1{
+  display: flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+}
+
+.item{
+  color: white;
+  background-color:brown ;
+  border: 1px solid black;
+
+}
+
+#id-item2{
+  margin-left: auto;
+}
+.text-center{
+  text-align: center;
+}
+
+.contenedor2 {
+  height: 250px;
+  width: 100%;
+  padding: 1px;
+  border: 1px solid black;
+  background-color: beige;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* el wrap hace que los items no se amontonen, mientras achicomla pantalla, los items se van ordenando en una segunda linea */
+  justify-content: space-evenly;
+  align-content: space-between;
+  align-items: flex-start;
+
+}
+
+.card{
+  color: white;
+  background-color: brown;
+  border: 1px solid black;
+}
+#id-card1{
+  height: 50px;
+}
+
+#id-card2{
+  /* flex-grow: 1; */
+  align-self: flex-end;
+  height: 25px;
+}
+
+#id-card3{
+  height: 75px;
+}
+
+#id-card4{
+  /* flex-grow: 2; */
+  height: 50px;
+}
+
+#id-card5{
+  height: 75px;
+}

@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
+
+@font-face {
+  font-family: "Barriecito";
+  src: url("/clase_03/Fonts/Barriecito/Barriecito-Regular.ttf");
+}
+
+* {
+  box-sizing: content-box;
+}
+
+html{
+font-size: 1em;
+}
+
+body {
+  background-color: beige;
+  font-size: 1.5em;
+}
+
+h1,
+h2 {
+  color: yellow;
+  background-color: black;
+  font-family: "Barriecito", cursive;
+}
+
+p {
+  color: blue;
+}
+
+div p {
+  color: black;
+  
+  font-size:  1em;
+  font-weight: bold;
+  font-style: italic;
+  font-family: "Times New Roman", Times, serif;
+  text-decoration: underline solid;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+p {
+  color: brown;
+  font-family: "dancing Script", cursive;
+}
+
+div {
+  background-color: brown;
+  height:max-content;
+  width: 100%;
+  padding: 4em;
+}
+h3 {
+  text-align: right;
+}
