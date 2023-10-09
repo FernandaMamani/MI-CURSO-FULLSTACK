@@ -5,5 +5,10 @@
 }
 
 section {
-  margin: 2em;
+  margin: 1em;
+}
+
+.color-rojo {
+    color: red;
+    text-transform: uppercase;
 }
