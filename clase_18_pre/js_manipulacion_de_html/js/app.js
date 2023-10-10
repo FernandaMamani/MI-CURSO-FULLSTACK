@@ -68,6 +68,8 @@ pDeSeccion3.setAttribute('class','color-rojo');
 let pDeSeccion4 = document.querySelector("#id-section4 p");
 let buttonDeLaSeccion4 = document.querySelector("#id-section4 button");
 
+console.log("\nMANIPULACIÓN DE ELEMENTOS");
+
 function cambiarColor() {
    //alert('Holaa!!');
   // pDeSeccion4.style.color = "red";
@@ -84,17 +86,41 @@ pDeSeccion4.ondblclick = cambiarColor; // doble click en el texto y cambia de co
 
 /* MANIPULACIÓN DE ELEMENTOS */
 
+
+
 let divDeSeccion5 = document.querySelector("#id-section5 div");
 let buttonDeLaSeccion5Agregar = document.querySelector("#id-agregar");
-let buttonDeSeccion5Modificar = document.querySelector("#d-modificar");
-let buttonDeSeccion5Eliminar = document.querySelector("#id-eliminar");
-let buttonDeSeccion5EliminarTodo = document.querySelector("#id-eliminar-todo");
+let buttonDeLaSeccion5Modificar = document.querySelector("#id-modificar");
+let buttonDeLaSeccion5Eliminar = document.querySelector("#id-eliminar");
+let buttonDeLaSeccion5EliminarTodo = document.querySelector("#id-eliminar-todo");
 
 function agregar() {
     let parrafo = document.createElement('p');   //creamos un elemento "p" desde JS.
     parrafo.innerText = "Texto agregado desde JS";
-    divDeSeccion5.appendChild(parrafo);
+    divDeSeccion5.appendChild(parrafo);  // agrgrgamos un DIV con .appendChild() al párrafo.
+}
+
+function modificar() {
+    divDeSeccion5.innerText = "texto modificado";  // modificamos  texto
+}
+
+function eliminarPrimerNodo() {
+    let nodos = divDeSeccion5.childNodes;   // es un objeto que me muestra todos los nodos y los hijos
+
+    console.dir(nodos);    // nos muestra  una lista de nodos
+    console.dir(nodos[0]);   // nodo específico
+
+    if (nodos.length > 0) {
+        divDeSeccion5.removeChild(nodos[0])  //llamamos al elemento Padre y le decimos que hijo vamos a borrar. En este caso el primero de la lista.
+    }
+}
+
+
+function eliminarTodo() {
+    divDeSeccion5.remove();  // Borra todo
 }
 
 buttonDeLaSeccion5Agregar.onclick = agregar;
-
+buttonDeLaSeccion5Modificar.onclick = modificar;
+buttonDeLaSeccion5Eliminar.onclick = eliminarPrimerNodo;
+buttonDeLaSeccion5EliminarTodo.onclick = eliminarTodo;

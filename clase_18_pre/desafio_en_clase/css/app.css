@@ -4,7 +4,8 @@
   box-sizing: border-box;
 }
 
-imagen {
+ /* Esta es la clase creada desde JS pero que debo llamar en CSS para ingresar los estilos. */
+.imagen {
   height: fit-content;
   width: 90%;
   border-radius: 3vw / 3vw;
