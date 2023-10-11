@@ -1,0 +1,53 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.parrafo {
+    height: 50px;
+    width: 300px;
+    margin: 3px;
+    border: 1px solid black;
+    background-color: beige;
+}
+
+.parrafo:empty{
+    background-color: salmon;
+}
+
+#id-color-blanco:checked+label,
+#id-opcion-1:checked+label,
+#id-pais option:checked {
+    color: brown;
+}
+input[type="text"]:invalid,
+input[type="number"]:invalid {
+    border: 1px solid red;
+}
+
+input[type="text"]:valid,
+input[type="number"]:valid {
+    border: 1px solid green;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+   outline: none;
+   border: none;
+   border-bottom: 1px solid gray;
+}
+
+input[type="text"]:disabled {
+    border : none;
+    background-color: lightblue;
+
+}
+
+input[type="text"]:enable {
+    background-color: beige;
+}
+
+input[type="text"]:read-only {
+    color: gray;
+}
