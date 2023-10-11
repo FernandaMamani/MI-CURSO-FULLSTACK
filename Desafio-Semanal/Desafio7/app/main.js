@@ -14,48 +14,48 @@ let integrante2 = [datos2[0].innerText, datos2[1].innerText, datos2[2].innerText
 console.log(integrante1);
 console.log(integrante2);
 
-//  let nombreInt1 = [];
-//  let apellidoInt1 = [];
 
-// let nombreInt2 = [];
-// let apellidoInt2 = [];
-
-//     if (integrante1[0]!=='' || integrante1[1] !=='' || integrante1[2]!=='' || integrante1[3]!=='') {
-//         nombreInt1.push(integrante1[0], integrante1[1]);
-//         apellidoInt1.push(integrante1[2],integrante1[3]);
-//     }
-
-// if (integrante2[0] !== '' || integrante2[1] !== '' || integrante2[2] !== '' || integrante2[3] !=='') {
-//     nombreInt2.push(integrante2[0], integrante2[1]);
-//     apellidoInt2.push(integrante2[2], integrante2[3]);
-// }
+function nombreYApellido1() {
+    let nombreInt1 = [];
+    let apellidoInt1 = [];
+    for (let i = 0; i < 2; i++) {
+        if (integrante1[i] !== "") {
+            nombreInt1.push(integrante1[i]);
+            //console.log(nombreInt1);
+        };
 
 
+    }
+    for (let i = 2; i < 4; i++) {
+        if (integrante1[i] !== "") {
+            apellidoInt1.push(integrante1[i].toUpperCase());
+        };
+    }
+    return '"' + nombreInt1.join(' ') + " " + apellidoInt1.join(' ') + '"';
+}
+
+function nombreYApellido2() {
+    let nombreInt2 = [];
+    let apellidoInt2 = [];
+    for (let i = 0; i < 2; i++) {
+        if (integrante2[i] !== "") {
+            nombreInt2.push(integrante2[i]);
+            //console.log(nombreInt2);
+        };
 
 
-// console.log(nombreInt1);
-// console.log(apellidoInt1);
+    }
+    for (let i = 2; i < 4; i++) {
+        if (integrante2[i] !== "") {
+            apellidoInt2.push(integrante2[i].toUpperCase());
+        };
+    }
+    return '"' + nombreInt2.join(' ') + " " + apellidoInt2.join(' ') + '"';
+    //return [nombreInt2, apellidoInt2]
+}
 
- /* console.log(nombreInt2);
- console.log(integrante2[2]);
+nombreYApellido1();
+nombreYApellido2();
 
- console.log(integrante2[2].length);
-console.log(integrante2[3].length);
- console.log(apellidoInt2);
- */
+console.log("-----" + "\n" + "Integrante 1: " + nombreYApellido1() + "\n" + "Integrante 2: " + nombreYApellido2() + "\n" + "-----");
 
-
-
-
-
-
-
-
-
-/* let integrante = "Integrante 1: "
-+ getValor(datos [0].innerHTML, true)
-+ getValor(datos[0].innerHTML, true)
-+ getValor(datos[0].innerHTML, true)
-+ getValor(datos[0].innerHTML, false)
-
-console.log(Integrante1); */
