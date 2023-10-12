@@ -2,33 +2,26 @@ console.log(titulo.innerHTML);
 
 
 let datos1 = document.querySelectorAll("#prim-int");
-console.log(datos1);
+//console.log(datos1);
 
 let datos2 = document.querySelectorAll("#seg-int");
-console.log(datos2);
-
-let integrante1 = [datos1[0].innerText,datos1[1].innerText,datos1[2].innerText,datos1[3].innerText];
-let integrante2 = [datos2[0].innerText, datos2[1].innerText, datos2[2].innerText, datos2[3].innerText];
-//let integrante1 = [datos1[0].innerHTML, datos1[1].innerHTML, datos1[2].innerHTML, datos1[3].innerHTML];
-//let integrante2 = [datos2[0].innerHTML, datos2[1].innerHTML, datos2[2].innerHTML, datos2[3].innerHTML];
-console.log(integrante1);
-console.log(integrante2);
+//console.log(datos2);
 
 
 function nombreYApellido1() {
     let nombreInt1 = [];
     let apellidoInt1 = [];
     for (let i = 0; i < 2; i++) {
-        if (integrante1[i] !== "") {
-            nombreInt1.push(integrante1[i]);
+        if (datos1[i].innerText !== "") {
+            nombreInt1.push(datos1[i].innerText);
             //console.log(nombreInt1);
         };
 
 
     }
     for (let i = 2; i < 4; i++) {
-        if (integrante1[i] !== "") {
-            apellidoInt1.push(integrante1[i].toUpperCase());
+        if (datos1[i].innerText !== "") {
+            apellidoInt1.push(datos1[i].innerText.toUpperCase());
         };
     }
     return '"' + nombreInt1.join(' ') + " " + apellidoInt1.join(' ') + '"';
@@ -38,16 +31,16 @@ function nombreYApellido2() {
     let nombreInt2 = [];
     let apellidoInt2 = [];
     for (let i = 0; i < 2; i++) {
-        if (integrante2[i] !== "") {
-            nombreInt2.push(integrante2[i]);
+        if (datos2[i].innerText !== "") {
+            nombreInt2.push(datos2[i].innerText);
             //console.log(nombreInt2);
         };
 
 
     }
     for (let i = 2; i < 4; i++) {
-        if (integrante2[i] !== "") {
-            apellidoInt2.push(integrante2[i].toUpperCase());
+        if (datos2[i].innerText !== "") {
+            apellidoInt2.push(datos2[i].innerText.toUpperCase());
         };
     }
     return '"' + nombreInt2.join(' ') + " " + apellidoInt2.join(' ') + '"';
@@ -63,15 +56,36 @@ console.log("-----" + "\n" + "Integrante 1: " + nombreYApellido1() + "\n" + "Int
 
 
 let promptColor;
-    for (let i = 0; i < 2; i++) {
-        for (let j = 0; j < 2; j++) {
-            if (integrante1[i]==integrante2[j]) {
-                console.log("Hubo coincidencias en los nombres");
-                promptColor = prompt("Hubo coincidencias. Ingresa un color para destacarlo :");
-            }else if (promptColor==false){
-                console.log("No hubo coincidencia en los nombres");
+for (let i = 0; i < 2; i++) {
+    for (let j = 0; j < 2; j++) {
+        if (datos1[i].innerText == datos2[j].innerText) {
+            console.log("Hubo coincidencias en los nombres");
+            promptColor = prompt("Hubo coincidencias en los Nombres. Ingresa un color para destacarlos :");
+            datos1[i].style.backgroundColor = promptColor;
+            datos2[j].style.backgroundColor = promptColor;
+        }
+    };
+}
+if (promptColor == undefined) {
+    console.log("No hubo coincidencia en los Nombres");
+}
+
+
+let confirmacion = confirm("¿Desea comparar los apellidos?");
+
+if (confirmacion == true) {
+    let promptColor2;
+    for (let i = 2; i < 4; i++) {
+        for (let j = 2; j < 4; j++) {
+            if (datos1[i].innerText == datos2[j].innerText) {
+                console.log("Hubo coincidencias en los Apellidos");
+                promptColor2 = prompt("Hubo coincidencias en los Apellidos. Ingresa un color para destacarlos :");
+                datos1[i].style.backgroundColor = promptColor2;
+                datos2[j].style.backgroundColor = promptColor2;
             }
         };
     }
-
-//reconsole.log(promptColor);
+    if (promptColor2 == undefined) {
+        console.log("No hubo coincidencia en los nombres");
+    }
+}
