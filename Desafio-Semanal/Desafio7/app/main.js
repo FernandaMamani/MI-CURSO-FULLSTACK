@@ -54,8 +54,24 @@ function nombreYApellido2() {
     //return [nombreInt2, apellidoInt2]
 }
 
+
 nombreYApellido1();
 nombreYApellido2();
 
 console.log("-----" + "\n" + "Integrante 1: " + nombreYApellido1() + "\n" + "Integrante 2: " + nombreYApellido2() + "\n" + "-----");
 
+
+
+let promptColor;
+    for (let i = 0; i < 2; i++) {
+        for (let j = 0; j < 2; j++) {
+            if (integrante1[i]==integrante2[j]) {
+                console.log("Hubo coincidencias en los nombres");
+                promptColor = prompt("Hubo coincidencias. Ingresa un color para destacarlo :");
+            }else if (promptColor==false){
+                console.log("No hubo coincidencia en los nombres");
+            }
+        };
+    }
+
+//reconsole.log(promptColor);
