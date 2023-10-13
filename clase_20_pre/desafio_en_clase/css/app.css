@@ -1,0 +1,133 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header,
+nav,
+aside,
+main,
+footer {
+    margin: 2px;
+    padding: 1vw;
+    border: 1px solid gray;
+    border-radius: 1vw /1vw;
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.4);
+}
+
+body {
+    height: 100vh;
+    width: 100 vw;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: max-content max-content ;
+
+    grid-template-areas:
+        "header header header"
+        "navbar navbar navbar"
+        "sidebar main main"
+        "footer footer footer";
+}
+
+header {
+    color: white;
+    grid-area: header;
+    background-image: linear-gradient(#73626E,#B38184);
+
+}
+
+nav {
+    grid-area: navbar;
+    background-color: #B38184;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 1vw;
+}
+
+nav ul form {
+    margin-left: auto;
+}
+
+nav ul li a:link {
+    color: white;
+    text-decoration:none;
+}
+
+aside {
+    background-color: #f0b49e;
+    grid-area: sidebar;
+    
+}
+
+main {
+    grid-area: main;
+    background-color: #f7e4be;
+    overflow: auto;
+}
+
+footer {
+    grid-area: footer;
+    color: white;
+    background-color:#73626E ;
+    text-align: center;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0.5vw;
+}
+
+.gallery img{
+    height: fit-content;
+    width: 100%;
+    border-radius: 0.0vw / 0.5vw;
+
+}
+
+.gallery img:hover{
+    border: 3px solid white;
+    box-shadow: 2px 2px 3px gray;
+}
+
+section{
+    margin: 10px 0;
+}
+
+section h3{
+    text-shadow: 1px 1px 3px gray;
+}
+
+@media (max-width: 480px){
+    body {
+            grid-template-columns: 1fr;
+            grid-template-areas:
+                "header"
+                "navbar"
+                "sidebar"
+                "main"
+                "footer";
+  
+            }
+  nav ul {
+    flex-direction:column ;
+    align-items: center;
+} 
+
+nav ul form {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    gap: 1vw;
+}
+nav ul form ::-webkit-inner-spin-button {
+width: 100%;
+}
+
+}
+
