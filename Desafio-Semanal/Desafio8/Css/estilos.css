@@ -1,6 +1,4 @@
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
 
@@ -13,12 +11,12 @@ src: url("/MI-CURSO-FULLSTACK/Desafio-Semanal/Desafio8/Fonts/Roboto/Roboto-Bold.
     font-family: "Poppins", sans-serif;
     src: url(/MI-CURSO-FULLSTACK/Desafio-Semanal/Desafio8/Fonts/Poppins/Poppins-Bold.ttf);
 
-} 
+}
 body {
     font-family:"Roboto", "Poppins", sans-serif;
-} 
+}
 
 h1 {
     font-family: "Roboto" sans-serif;
-    
+
 }
