@@ -2,6 +2,44 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: #081c15;
+}
+header {
+    color: white;
+   display: grid;
+   /* grid-template-rows: 1fr;
+   grid-template-columns: 1fr ;
+   place-items: center center;
+   place-content: center center; */
+}
+
+
+main {
+    display: grid;
+    /* grid-template-rows: 2fr 1fr 2fr 1fr;
+    grid-template-columns: 1fr;
+    gap: 5vw;
+    justify-items: center center;
+    place-items:stretch;
+    place-content: center center; */
+    
+}
+
+
+fieldset {
+background-color: #D8F3DC;
+border: 2px solid ;
+border-color: #2D6A4F ;
+border-radius: 0.5vw 0.5vh 0.5vw 0.5vh;
+}
+
+legend {
+  padding: 0.5em;
+  background-color: #2D6A4F;
+  border-radius:1vw 1vh 1vw 1vw;
+}
+
 @font-face {
     font-family: "Roboto", sans-serif;
 src: url("/MI-CURSO-FULLSTACK/Desafio-Semanal/Desafio8/Fonts/Roboto/Roboto-Bold.ttf");
