@@ -34,14 +34,14 @@
 
                     <div>
                         <label for="id-nombre" class="label-block">Nombre:<span>*</span> </label>
-                        <input type="text" id="id-nombre" name="nombre" required>
+                        <input type="text" id="id-nombre" class="focus" name="nombre" required>
                     </div>
 
 
 
                     <div>
                         <label for="id-apellido" class="label-block">Apellido:<span>*</span></label>
-                        <input type="text" id="id-apellido" name="apellido" required>
+                        <input type="text" id="id-apellido" class="focus" name="apellido" required>
                     </div>
 
 
@@ -49,7 +49,7 @@
                     <div>
 
                         <label for="id-documento" class="label-block">Documento:<span>*</span></label>
-                        <input type="number" id="id-documento" name="documento" required>
+                        <input type="number" id="id-documento" class="focus" name="documento" required>
 
                     </div>
 
@@ -70,7 +70,7 @@
 
                     <div>
                         <label for="id-contanosdevos" class="label-block">Contanos un poco de vos ...</label>
-                        <textarea name="contanosdevos" id="id-contanosdevos" class="contanosdevos" cols="40" rows="5"
+                        <textarea name="contanosdevos" id="id-contanosdevos" class="focus" cols="40" rows="5"
                             maxlength="90"></textarea>
                     </div>
 
@@ -102,16 +102,16 @@
 
 
                     <div>
-                        <label for="id-telefono" class="label-block">Teléfono:<span>*</span></label>
-                        <input type="tel" name="telefono" pattern="[0-9]{2}-[0-9]{4}-[0-9]{4}"
-                            placeholder="Código de área y número" minlength="9" maxlength="10" required>
+                        <label for="id-telefono" class="label-block">Teléfono:</label>
+                        <input type="tel" name="telefono" class="focus" pattern="[0-9]{2}-[0-9]{4}-[0-9]{4}"
+                            placeholder="Código de área y número" minlength="9" maxlength="10">
                     </div>
 
 
 
                     <div>
                         <label for="id-email" class="label-block">Correo electrónico:<span>*</span></label>
-                        <input type="email" name="email" id="id-email" minlength="10" maxlength="50"
+                        <input type="email" name="email" id="id-email" class="focus" minlength="10" maxlength="50"
                             placeholder="Ej: mail@gmail.com" required>
                     </div>
 
