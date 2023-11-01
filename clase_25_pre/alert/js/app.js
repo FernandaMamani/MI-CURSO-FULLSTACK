@@ -1,0 +1,1 @@
+const showAlert = document.querySelector(#id-show-alert);

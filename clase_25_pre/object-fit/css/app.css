@@ -1,0 +1,50 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+section {
+    margin: 1vw;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    gap: 7vw;
+}
+
+.card {
+    height: 100px;
+    width: 250px;
+    border: 1px dotted black;
+}
+
+.card img {
+    height: 100%;
+    width: 100%;
+}
+
+.card:first-of-type p {
+    color: white;
+}
+
+.card:first-of-type img {
+    object-fit: fill;
+}
+
+.card:nth-of-type(2) img {
+    object-fit: cover;
+    object-position: top;
+}
+.card:nth-of-type(3) img {
+    object-fit:contain;
+    object-position: 5% 50px;
+}
+
+.card:nth-of-type(4) img {
+    object-fit: none;
+    object-position: left;
+}
+
+
+
