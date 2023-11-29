@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.form {
+    width: clamp(300px, 100%, 450px);
+    padding: 1vw;
+    background-color: beige;
+}
+
+.form__div {
+    padding: 1vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.form__div__notify {
+    padding: 0.2rem 0;
+    color:blue;
+    font-size: o.85rem;
+    font-style: italic;
+}
+
+.form__div__
