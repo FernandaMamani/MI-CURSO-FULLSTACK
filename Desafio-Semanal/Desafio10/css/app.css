@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    background-color: #224b70;
+    font-family: 'Fraunces', serif;
+    color: #fff;
+}
+
+.conteiner {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.calculator {
+    display: grid;
+    grid-template-columns: repeat(4, 75px);
+    grid-template-rows: 160px repeat(5, 75px);
+    background-color: #00916e;
+}
