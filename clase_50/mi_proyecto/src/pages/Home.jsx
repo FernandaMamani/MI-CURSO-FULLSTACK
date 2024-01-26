@@ -1,8 +1,21 @@
+import { Box } from "@mui/material";
+import { useState } from "react";
+
 const Home = () => {
+    const [ products, setPoducts ] = useState([]);
     return (
-        <div>
-            <h2>Soy la página de Inicio</h2>
-        </div>
+        <Box className="home">
+            <Box
+                component="section"
+                className="home__section">
+            </Box>
+
+            <Box
+                className="home__section__search">
+                <h3>Productos</h3>
+
+            </Box>
+        </Box>
     );
 };
 
