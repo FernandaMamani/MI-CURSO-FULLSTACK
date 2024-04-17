@@ -34,12 +34,12 @@ h1 {
     text-align: center;
     letter-spacing: 1vw;
 
-    /* separar letras y centrar */
 }
 
 .hoteles {
     display: flex;
-    /* justify-content: center; */
+    width: 98vw;
+    height: auto;
 }
 
 h2 {
@@ -50,35 +50,36 @@ h2 {
     margin-top: 2vw;
 }
 
-p{
-    font-size: 0.0000001%;
+.texto {
+
     padding: 0.5vw;
     line-height: 1.5;
-    color: royalblue;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-   margin-top: 0.5vw;
-   margin-left: 0.5w;
-   margin-right: 0.5vw;
-}
-
-.image {
-    width:30vw ;
-    height: fit-content;
-    padding: 0.5vw;
-
-    float:left
-}
-
-p {
-    /* display: inline-block; */
+    color: rgb(107, 132, 210);
     font-family: Lucida Sans Regular;
-    font-size: 1.2em;
-
+    font-size: 1em;
 }
 
+.image1,
+.image3 {
+    width: 30vw;
+    height: auto;
+    min-width: fit-content;
+    padding: 0.5vw;
+    float: right
+}
 
 .image2 {
+    width: 30vw;
+    height: auto;
+    min-width: fit-content;
+    padding: 0.5vw;
+    float: left;
+
+}
+
+
+.image4 {
     margin: 0.6vw;
-width: 97.5vw;
+    width: 97.5vw;
 
 }
